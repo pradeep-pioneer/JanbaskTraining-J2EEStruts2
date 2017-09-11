@@ -6,6 +6,7 @@
     <constant name="struts.devMode" value="true" />
     <constant name="struts.custom.i18n.resources" 
              value="ApplicationResources"/>
+    <constant name="struts.custom.i18n.resources" value="global" />
     <package name="basicstruts2" extends="struts-default">
         <action name="index">
             <result>/index.jsp</result>
@@ -32,5 +33,16 @@
 		<action name="ajax" class="com.janbask.action.AjaxAutoComplete" method="execute">
   			<result name="success">/ajax.jsp</result>
 		</action>
+		<action name="empinfo" 
+         class="com.janbask.action.EmployeeInfo"
+         method="execute">
+         <result name="input">/localization.jsp</result>
+         <result name="success">/success.jsp</result>
+      </action>
+		<action name="locale" 
+         class="com.janbask.action.Locale"
+         method="execute">
+         <result name="success">/localization.jsp</result>
+      </action>
     </package>
 </struts>

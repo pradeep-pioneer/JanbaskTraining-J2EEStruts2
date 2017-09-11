@@ -22,5 +22,7 @@
 <p><a href="url.jsp">Click here to see url Tag</a></p>
 <h3>AJAX Tag</h3>
 <p><a href="ajax.action">Click here to see AJAX Tag</a></p>
+<h3>Localization</h3>
+<p><a href="locale.action">Click here to see Localization Example</a></p>
 </body>
 </html>
